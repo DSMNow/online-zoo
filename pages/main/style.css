@@ -515,7 +515,14 @@
 	position: relative;
 	background-color: #000000;
 	color: #ffffff;
-	min-height: 443px;
+	min-height: 413px;
+}
+.footer_top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 1160px;
+	position: relative;
 }
 .footer_logo {
 	position: relative;
@@ -527,15 +534,13 @@
 	margin-top: 41px;
 	margin-bottom: 68px;
 	float: left;
-}
-.footer_container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	text-decoration: none;
 }
 .footer_subscribe {
-	margin-left: 1013px;
+	float: right;
+	margin-left: 711px;
 	margin-top: 40px;
+	min-width: 367px;
 }
 .sub_text {
 	font-weight: 400;
@@ -545,12 +550,10 @@
 }
 .sub_email {
 	display: inline-block;
-}
-
-.sub_email {
     background-color: #000000;
-    width: 208px;
-    height: 20px;
+	padding-left: 10px;
+    width: 228px;
+    height: 42px;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
@@ -569,14 +572,14 @@
     border: 1px solid #4b9200;
     border-radius: 5px;
     color: #4b9200;
+	cursor: pointer;
 }
-.sub_buttom :hover {
-	background: yellow;
+.sub_click :hover {
+	color: #ffffff;
 }
 .footer_button {
-	position: relative;
-	margin-left: 110px;
-	margin-top: 56px;
+	position: absolute;
+	margin-left: 220px;
 	background-color: #f9804b;
 	height: 54px;
 	width: 298px;
@@ -587,13 +590,23 @@
 	font-size: 16px;
 	text-align: center;
 }
-.footer_click :hover {
-	background-color: #ff8c00;
+.footer_click {
+	display: block;
+}
+.footer_click:hover {
+	background-color: #ff8c00; !important;
+}
+.footer_low {
+	display: flex;
+	flex-direction: row;
+	min-width: 1160px;
+	position: relative;
+	height: 228px;
 }
 .social_media {
 	display: flex;
 	flex-direction: column;
-	margin-top: 42px;
+	margin-top: 98px;
 	margin-left: 220px;
 	gap: 10px;
 }
@@ -608,16 +621,23 @@
 	text-decoration: underline;
 }
 .footer_list {
-	margin-left: 619px;
 	display: flex;
 	align-items: space-between;
+	justify-content: center;
 	gap: 60px;
+	margin-left: 288px;
+	margin-top: 156px;
 }
 .footer_design_item {
+	position: absolute;
 	margin-left: 1152px;
+	margin-top: 176px;
 	font-size: 16px;
 	font-weight: 400;	
-	line-height: 130%;
+	line-height: 140%;
+	color: #808080;
+	height: 21px;
+	min-width: 220px;
 }
 
 /* Donate page */
